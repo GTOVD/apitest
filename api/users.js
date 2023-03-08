@@ -11,9 +11,8 @@ module.exports = async (req, res) => {
         if (req.method === "GET") {
             const database = client.db("sample_mflix");
             const getMovies = database.collection("movies");
-            console.log(getMovies);
             const query = { title: "Back to the Future" };
-            const movies = await getMovies.findOne(query).toArray();
+            const movies = await getMovies.findOne(query);
             res.status(200).json({ movies });
         } else {
             const { name, location } = req.body;
