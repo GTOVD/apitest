@@ -3,7 +3,9 @@ import { connectToDatabase } from "../lib/database";
 module.exports = async (req, res) => {
     if (req.method === "GET") {
         const db = await connectToDatabase();
-        const collection = await db.collection("inspections");
+        const collection = await db.collection(
+            "sample_airbnb.listingsAndReviews"
+        );
 
         const users = await collection.find({}).toArray();
 
