@@ -21,6 +21,7 @@
     "@vercel/node": "^2.9.12"
   },
   "dependencies": {
+    "dotenv": "^16.0.3",
     "mongodb": "^5.1.0"
   }
 }
