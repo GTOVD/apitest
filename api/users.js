@@ -3,7 +3,7 @@ require("dotenv").config();
 
 // const uri = process.env.MONGODB_URI;
 const uri =
-    "mongodb+srv://root:Zmh4GW2Y3wCC5AyO@cluster0.0f5pf1v.mongodb.net/?retryWrites=true&w=majority";
+    "mongodb+srv://vercel-admin-user:H6iHPF1uS99AJmZk@cluster0.0f5pf1v.mongodb.net/?retryWrites=true&w=majority";
 const client = new MongoClient(uri);
 
 module.exports = async (req, res) => {
