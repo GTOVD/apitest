@@ -19,5 +19,8 @@
   "homepage": "https://github.com/GTOVD/apitest#readme",
   "devDependencies": {
     "@vercel/node": "^2.9.12"
+  },
+  "dependencies": {
+    "mongodb": "^5.1.0"
   }
 }
